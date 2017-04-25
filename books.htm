@@ -1,0 +1,47 @@
+<html ng-app="myapp">
+<head>
+         <link rel="stylesheet" href="style.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+                <script src="app.js"></script>
+
+</head>
+
+<body ng-controller="bookctrl">
+<h1>Books details</h1>   
+<p>{{msg}}</p>
+   
+            <table >
+            <tr>
+                <th>SERIAL NO</th>
+                <th>ITEM ID</th>
+                <th>NAME</th>
+                <th>AUTHOR</th>
+                <th>PRICE</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td >B101</td>
+                <td >ENGLISH COMP</td>
+                <td >WREN N MARTIN</td>
+                <td >200</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>B102</td>
+                <td>COMPLETE REFERENCE</td>
+                <td>HERBERT SCHILDT</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>B103</td>
+                <td>APTITUDE</td>
+                <td>RS AGGRAWAL</td>
+                <td>500</td>
+                
+            </tr>
+            </table>
+    <div ui-view></div>
+</body>
+</html>

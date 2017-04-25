@@ -1,0 +1,12 @@
+
+table{
+    align-content: center;
+    border:solid black 2px;
+}
+table.tr,th,td{
+    
+background-color: azure;
+align-content: center;   
+border:solid black 2px;
+   
+}

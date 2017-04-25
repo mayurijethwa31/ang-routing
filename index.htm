@@ -1,0 +1,53 @@
+        <html ng-app="myapp">
+        <head>
+             <link rel="stylesheet" href="style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+            </head>
+        <body>
+            <center>
+           <a ui-sref="books">BOOKS</a>
+           <a ui-sref="accessories">ACCESSORIES</a>
+                
+            
+            <table>
+            <tr>
+                <th>SERIAL NO</th>
+                <th><a>ITEM ID</a></th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td ><a ui-sref="books">B101</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a ui-sref="books">B102</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a ui-sref="books">B103</a></td>
+            </tr>
+                  <tr>
+                <td>4</td>
+                      <td><a ui-sref="accessories">A101</a></td>
+            </tr>
+                  <tr>
+                <td>5</td>
+                      <td><a ui-sref="accessories" >A102</a></td>
+            </tr>
+                  <tr>
+                <td>6</td>
+                      <td><a ui-sref="accessories">A103</a></td>
+            </tr>
+            </table>
+           
+            <div ui-view></div>
+            </center>
+        </body>
+
+
+
+
+        </html>

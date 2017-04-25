@@ -1,0 +1,45 @@
+<html ng-app="myapp">
+<head>
+         <link rel="stylesheet" href="style.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+                <script src="app.js"></script>
+
+</head>
+<body ng-controller="accessctrl">
+<h1>Accessories details</h1> 
+ <p>{{msg}}</p>
+    
+            <table >
+            <tr>
+                <th>SERIAL NO</th>
+                <th>ITEM ID</th>
+                <th>TYPE</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td >A101</td>
+                <td >LIPSTICK</td>
+                <td >LAKME</td>
+                <td >400</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>A102</td>
+                <td>PENCIL</td>
+                <td>APSARA</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>A103</td>
+                <td>PEN</td>
+                <td>PARKER</td>
+                <td>100</td>
+            </tr>
+            </table>
+    <div ui-view></div>
+</body>
+</html>
